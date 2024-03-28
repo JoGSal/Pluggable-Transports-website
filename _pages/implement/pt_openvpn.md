@@ -306,6 +306,7 @@ If it worked -- continue to the installation of shapeshifter-dispatcher and enab
 
 The next step is to install and use the shapeshifter-dispatcher server and client. See our [guide to installing shapeshifter](/implement/shapeshifter) for instructions.
 
+The information you will need is:
 
 Your server IP address - we're going to use 203.0.113.101 in this guide.
 Your VPN port - we're using 1194, but you may choose to run elsewhere.
@@ -324,8 +325,7 @@ On the client, we're going to need to do two things: run shapeshifter, and chang
 First, let's run shapeshifter with Replicant. Don't forget to change the target address to your server and its shapeshifter port.
 
 ~~~~~
-cd ~/shapeshifter-dispatcher
-./shapeshifter-dispatcher -transparent -client -state state -target 203.0.113.101:2233 -transports obfs2 -proxylistenaddr 127.0.0.1:4455 -logLevel DEBUG -enableLogging
+<GOPATH>/bin/shapeshifter-dispatcher -transparent -client -state state -transports Replicant -proxylistenaddr 127.0.0.1:1443 -optionsFile ConfigFiles/ReplicantClientConfigV3.json -logLevel DEBUG -enableLogging
 ~~~~~
 
 Now, you'll need to change some lines in your CLIENT.ovpn file. This is how the file should now look:
@@ -357,8 +357,9 @@ route 203.0.113.101 255.255.255.255 net_gateway #Bypass the server in the VPN co
 
 Note that you'll need to use the port that shapeshifter is connecting to, because it will be handling the connection to the OpenVPN server. You will also need to bypass the VPN server from the OpenVPN configuration, as shapeshifter itself is handling that connection.
 
-And now, you should have a working OpenVPN configuration, connecting over shapeshifter. Our [guide to installing shapeshifter](/implement/shapeshifter) includes additional configuration options as well as information on using the SOCKS5 Mode
+And now, you should have a working OpenVPN configuration, connecting over shapeshifter. Our [guide to installing shapeshifter](/implement/shapeshifter) includes additional configuration options as well as information on using the SOCKS5 Mode.
 
 ## TunnelBear with OpenVPN and Obsf4 PT
 
 As of March 2021, TunnelBear has “an implementation of Obs4 that can be used as a library, as well as a version of OpenVPN that we could integrate directly into TunnelBear which supports a Pluggable Transports API”. Read their [blog post](https://www.tunnelbear.com/blog/tunnelbear-implements-pluggable-transports-with-openvpn3/) for more details.
+
