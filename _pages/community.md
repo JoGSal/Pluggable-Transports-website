@@ -31,7 +31,7 @@ sidebar:
 
 * [Operator Foundation](https://operatorfoundation.org)- making useable tools to help people around the world with censorship, security, and privacy. Creators of [Shapeshifter](https://github.com/OperatorFoundation/?q=anticensorship) and [Adversary Lab](https://github.com/OperatorFoundation/AdversaryLab).
 
-* [Redjack](https://www.redjack.com) - tackling critical intelligence challenges, creators of [Marionette](https://github.com/marionette-tg/marionette), the programmable network proxy.
+* [Redjack](https://www.redjack.com) - tackling critical intelligence challenges, creators of [Marionette](https://github.com/marionette-tg/marionette)(Currently Unavailable), the programmable network proxy.
 
 * [#KeepItOn](https://www.accessnow.org/keepiton/) is a public advocacy campaign by Access Now to fight internet shutdowns and censorship.
 
