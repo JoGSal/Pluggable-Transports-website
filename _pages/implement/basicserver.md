@@ -17,15 +17,15 @@ sidebar:
 
 {% include toc icon="file-text" %}
 
-This guide takes you through the basic steps to set up a server, using Ubuntu 18.04 (updated on June 25 2021) and installing Go, the programming language used by many transports and libraries. Once you have this server built, it can be used as a basis for installing PT libraries and tools, such as [Shapeshifter](https://github.com/OperatorFoundation/shapeshifter-dispatcher) and [Stegotorus](https://github.com/TheTorProject/stegotorus).
+This guide takes you through the basic steps to set up a server, using Ubuntu 18.04 and installing Go, the programming language used by many transports and libraries. Once you have this server built, it can be used as a basis for installing PT libraries and tools, such as [Shapeshifter](https://github.com/OperatorFoundation/shapeshifter-dispatcher) and [Stegotorus](https://github.com/TheTorProject/stegotorus).
+
+These steps are adapted from Digital Ocean's [Initial Server Setup guide](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)(updated on June 25 2021), and assume you have configured your server with root access via your SSH key.
 
 Although the cmd commands are fairly similar for Ubuntu versions 20.04 and 22.04, instructions for each specific version and more can also be found in the guide’s “Choose a different version or distribution” drop-down menu
 
-These steps are adapted from Digital Ocean's [Initial Server Setup guide](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04), and assume you have configured your server with root access via your SSH key.
+# Basic server setup #
 
 If you have not already logged into your server, you may want to follow Digital Ocean's guide on [how to connect to your Droplet with SSH] (https://www.digitalocean.com/community/tutorials/how-to-connect-to-your-droplet-with-ssh), which covers this process in detail.
-
-# Basic server setup #
 
 First, log in to the server as root. If you are doing this from a remote machine, use the command:
 
